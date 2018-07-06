@@ -10,6 +10,8 @@ implementation of the methods presented here.
 This guide is targeted at Windows users, so please use Google to help you set up
 your MacOS or Linux OS if you happen to use those.
 
+
+
 1. Install python
 
 Windows user simply should download and install Anaconda from here:
@@ -37,9 +39,13 @@ Python 3.6.3 |Anaconda custom (64-bit)
 quit()
 ````
 
+
+
 2. Install PyCharm IDE
 
 Download and install [PyCharm](https://www.jetbrains.com/pycharm/) as your IDE.
+
+
 
 3. Clone this repository
 
@@ -49,6 +55,8 @@ Then go to "GIT" and copy in the following URL:
 https://github.com/NatholBMX/CV_Introduction.git
 
 What for the process to finish and open the new project.
+
+
 
 4. Create a new virtual environment
 
@@ -84,6 +92,8 @@ Deactivating the virtual environment is done with following command:
 deactivate
 ```
 
+
+
 5. Configure your project interpreter
 Set the created virtual environment for your project interpreter by navigating
 in PyCharm to "File", "Settings" and
@@ -103,3 +113,32 @@ os.path.dirname(sys.executable)
 ````
 
 Copy the output of this and choose "python.exe" to configure your project interpreter.
+
+
+6. Install the packages needed for this introduction project
+
+You can simply install all required packages from PyCharm by opening 
+"requirements.txt" and clicking on "Install requirements".
+
+For installing all requirements without an idea, run:
+
+````python
+pip install -r requirements.txt
+````
+
+This will install all requirements needed.
+
+Manual installation:
+* Install openCV Python for Windows: 
+[openCV Python](http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_setup/py_setup_in_windows/py_setup_in_windows.html)
+* Install Tensorflow for Windows: 
+[Tensorflow Installation For Windows](https://www.tensorflow.org/install/install_windows).
+If you happen to have Admin rights, install it for GPU.
+
+
+7. Test your installation
+
+The folder "tests" contains different scripts for testing your installation.
+
+* Test openCV: run "simple_webcam.py"
+* Test Tensorflow: run "simple_tensorflow.py"
