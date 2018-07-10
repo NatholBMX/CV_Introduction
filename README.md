@@ -134,6 +134,8 @@ Manual installation:
 * Install Tensorflow for Windows: 
 [Tensorflow Installation For Windows](https://www.tensorflow.org/install/install_windows).
 If you happen to have Admin rights, install it for GPU.
+* Install Keras for Windows:
+[Keras Installation](https://keras.io/#installation)
 
 
 7. Test your installation
@@ -142,3 +144,4 @@ The folder "tests" contains different scripts for testing your installation.
 
 * Test openCV: run "simple_webcam.py"
 * Test Tensorflow: run "simple_tensorflow.py"
+* Test Keras: run "simple_keras.py"
