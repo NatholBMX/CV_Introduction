@@ -1,5 +1,5 @@
 """
-Exercise 1:
+Exercise 3:
 - Apply haar cascades for finding faces
 - Track face with object tracking API from opencv
 """
@@ -15,10 +15,10 @@ def init_detector(detector_index=0):
         raise Exception("Detector index out of bounds")
 
     if detector_index == 0:
-        detector_path = "C:\\Users\\nwaller\\Documents\\CV_Introduction\\exercises\\detector\\haarcascade_frontalface_default.xml"
+        detector_path = "C:\\Users\\nwaller\\Documents\\CV_Introduction\\solutions\\detector\\haarcascade_frontalface_default.xml"
         classifier = cv2.CascadeClassifier(detector_path)
     elif detector_index == 1:
-        detector_path = "C:\\Users\\nwaller\\Documents\\CV_Introduction\\exercises\\detector\\lbpcascade_frontalface.xml"
+        detector_path = "C:\\Users\\nwaller\\Documents\\CV_Introduction\\solutions\\detector\\lbpcascade_frontalface.xml"
         classifier = cv2.CascadeClassifier(detector_path)
     return classifier
 
