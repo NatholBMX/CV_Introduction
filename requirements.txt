@@ -2,3 +2,8 @@ opencv-python
 numpy
 tensorflow
 keras
+scipy
+scikit-learn
+h5py
+matplotlib
+pypiwin32

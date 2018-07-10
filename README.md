@@ -145,3 +145,11 @@ The folder "tests" contains different scripts for testing your installation.
 * Test openCV: run "simple_webcam.py"
 * Test Tensorflow: run "simple_tensorflow.py"
 * Test Keras: run "simple_keras.py"
+
+8. Download data
+
+For running our detectors, we need the pre-trained detector data:
+* Donwload the Haarcascade detector from [here](https://github.com/shantnu/FaceDetect/blob/master/haarcascade_frontalface_default.xml)
+* Download the LBP Cascade detector from [here](https://github.com/informramiz/Face-Detection-OpenCV/blob/master/data/lbpcascade_frontalface.xml)
+
+Save the this detectors inside your "detector" folder.
