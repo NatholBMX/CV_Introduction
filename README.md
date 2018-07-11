@@ -130,11 +130,11 @@ This will install most of the requirements needed. There are two
 modules which require special treatment.
 
 * Dlib: Download the 
-[Python Bindings for Dlib](https://files.pythonhosted.org/packages/97/08/0d2b53b3845d562d01108e482ae45596a0d13bf58c63172df954ff0b53ef/dlib-19.14.0.tar.gz#sha256=88470836cb649b380f6f9eca054f08a94b115ee2845b1eccbf8a410efb2e3dc1)
+[Python Bindings for Dlib](https://files.pythonhosted.org/packages/0e/ce/f8a3cff33ac03a8219768f0694c5d703c8e037e6aba2e865f9bae22ed63c/dlib-19.8.1-cp36-cp36m-win_amd64.whl#sha256=794994fa2c54e7776659fddb148363a5556468a6d5d46be8dad311722d54bfcf)
 and extract them into your preferred folder.
 * Install the wheel with Python:
 ````python
-pip install dlib-file.whl
+pip install dlib-19.8.1-cp36-cp36m-win_amd64.whl
 ````
 * Install face_recognition by running following script:
 ````python
