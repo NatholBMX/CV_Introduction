@@ -126,7 +126,20 @@ For installing all requirements without an idea, run:
 pip install -r requirements.txt
 ````
 
-This will install all requirements needed.
+This will install most of the requirements needed. There are two
+modules which require special treatment.
+
+* Dlib: Download the 
+[Python Bindings for Dlib](https://files.pythonhosted.org/packages/97/08/0d2b53b3845d562d01108e482ae45596a0d13bf58c63172df954ff0b53ef/dlib-19.14.0.tar.gz#sha256=88470836cb649b380f6f9eca054f08a94b115ee2845b1eccbf8a410efb2e3dc1)
+and extract them into your preferred folder.
+* Install the wheel with Python:
+````python
+pip install dlib-file.whl
+````
+* Install face_recognition by running following script:
+````python
+pip install face_recognition
+````
 
 Manual installation:
 * Install openCV Python for Windows: 
@@ -145,11 +158,4 @@ The folder "tests" contains different scripts for testing your installation.
 * Test openCV: run "simple_webcam.py"
 * Test Tensorflow: run "simple_tensorflow.py"
 * Test Keras: run "simple_keras.py"
-
-8. Download data
-
-For running our detectors, we need the pre-trained detector data:
-* Donwload the Haarcascade detector from [here](https://github.com/shantnu/FaceDetect/blob/master/haarcascade_frontalface_default.xml)
-* Download the LBP Cascade detector from [here](https://github.com/informramiz/Face-Detection-OpenCV/blob/master/data/lbpcascade_frontalface.xml)
-
-Save the this detectors inside your "detector" folder.
+* Test face_recognition: run "simple_face_recognition.py"
