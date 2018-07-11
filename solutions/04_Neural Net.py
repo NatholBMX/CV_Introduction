@@ -8,7 +8,6 @@ Exercise 1:
 
 import face_recognition
 import cv2
-import numpy
 
 
 def recognize_face(img):
@@ -21,13 +20,13 @@ def recognize_face(img):
 
     return img
 
+
 def main():
     cam = cv2.VideoCapture(0)
 
     while True:
         ret, frame = cam.read()
         recognize_face(frame)
-
 
         cv2.imshow('frame', frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
