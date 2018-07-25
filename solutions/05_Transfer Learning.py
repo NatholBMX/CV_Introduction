@@ -39,7 +39,7 @@ def recognize_learned_faces(img, known_face_encodings, known_face_names):
         text_width, text_height = 500, 10
         cv2.rectangle(img, (left, bottom - text_height - 10), (right, bottom), (0, 255, 0), -1)
         font = cv2.FONT_HERSHEY_SIMPLEX
-        cv2.putText(img, name, (left, bottom), font, 1, (120, 255, 120), 1, cv2.LINE_AA)
+        cv2.putText(img, name, (left, bottom), font, 1, (255, 0, 120), 1, cv2.LINE_AA)
 
     return img
 
