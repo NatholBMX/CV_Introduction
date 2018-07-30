@@ -26,9 +26,10 @@ def main():
 
     while True:
         ret, frame = cam.read()
-        recognize_face(frame)
+        resized_frame = cv2.resize(frame, (0, 0), fx=0.5, fy=0.5)
+        recognize_face(resized_frame)
 
-        cv2.imshow('frame', frame)
+        cv2.imshow('frame', resized_frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
